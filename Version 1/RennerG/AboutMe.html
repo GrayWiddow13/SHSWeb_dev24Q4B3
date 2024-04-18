@@ -1,0 +1,121 @@
+<html lang="en">
+
+<head>
+
+    <title>Graysons Aboout Me</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+        - pandas
+    </py-env>
+    <style>
+        section {
+            border: 2px solid rgb(0, 0, 0);
+            width: 210px;
+        }
+        
+        body {
+            background: rgb(255, 228, 252);
+        }
+        
+        h1 {
+            color: rgb(255, 0, 183);
+        }
+        
+        h4 {
+            font-weight: bold;
+            color: rgb(235, 188, 255);
+            text-shadow: -.7px -.7px 0 #000, .7px -.7px 0 #000, -.7px .7px 0 #000, .7px .7px 0 #000;
+        }
+        
+        button {
+            background: rgb(226, 196, 255);
+        }
+        
+        button:hover {
+            color: rgb(255, 255, 255);
+            background: rgb(188, 122, 250);
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <center>
+            <h1>
+                <center>About Me, Grayson</center>
+            </h1>
+
+            <h4>Interests</h4>
+            <section>
+                <p>Airplanes/Jets</p>
+                <p>Tanks</p>
+                <p>Painting Models</p>
+            </section>
+
+            <h4>Favorite Music Artists</h4>
+            <section>
+                <p>Primus</p>
+                <p>Soul Coughing</p>
+                <p>My Chemical Romance</p>
+                <p>Rage Against the Machine</p>
+                <p>Korn</p>
+                <p>Buckethead</p>
+            </section>
+
+            <h4>Pictures</h4>
+            <section>
+                <img src="About Me Pics/Porksodacover.jpg" height="100" width="100">
+                <img src="About Me Pics/Strike Eagle.jpeg" height="100" width="100">
+            </section>
+
+            <h4>Links </h4>
+            <section>
+                <table>
+                    <tr>
+                        <td>
+                            <center>
+                                <button onclick="window. open('lists.html')">Lists</button>
+                                <br>
+                                <button onclick="window. open('music.html')">Music</button>
+                                <br>
+                                <button onclick="window. open('Table.html')">Table</button>
+                            </center>
+                        </td>
+                        <td>
+                            <center>
+                                <button onclick="window. open('links.html')">Links</button>
+                                <br>
+                                <button onclick="window. open('Form.html')">Form</button>
+                                <br>
+                                <button onclick="window. open('AboutMe.html')">About Me </button>
+                            </center>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <div class="slider-container">
+                <input type="range" min="0" max="127" value="0" class="slider" id="myRange">
+                <div id="binary-value">Binary Value: 0</div>
+            </div>
+
+            <script>
+                const slider = document.getElementById("myRange");
+                const binaryValue = document.getElementById("binary-value");
+
+                slider.addEventListener("input", updateBinaryValue);
+
+                function updateBinaryValue() {
+                    const decimalValue = parseInt(slider.value);
+                    const binaryString = decimalValue.toString(2).padStart(8);
+                    binaryValue.textContent = `Binary Value: ${binaryString}`;
+                }
+            </script>
+            <py-script>
+                print("Messing around with Python"); print("Messing around with Python");
+            </py-script>
+</body>
+
+</html>
