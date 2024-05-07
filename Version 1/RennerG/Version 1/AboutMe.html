@@ -1,0 +1,139 @@
+<html lang="en">
+
+<head>
+    <title>Graysons Aboout Me</title>
+    <link rel="icon" href="Images/favicon.ico" />
+    <style>
+        section {
+            border: 2px solid rgb(0, 0, 0);
+            width: 210px;
+        }
+        
+        body {
+            background: rgb(255, 228, 252);
+        }
+        
+        h1 {
+            color: rgb(188, 122, 250);
+            text-shadow: -.7px -.7px 0 #000, .7px -.7px 0 #000, -.7px .7px 0 #000, .7px .7px 0 #000;
+        }
+        
+        h4 {
+            font-weight: bold;
+            color: rgb(235, 188, 255);
+            text-shadow: -.7px -.7px 0 #000, .7px -.7px 0 #000, -.7px .7px 0 #000, .7px .7px 0 #000;
+        }
+        
+        button:not(.BigButton) {
+            width: 100px;
+        }
+        
+        button {
+            background: rgb(226, 196, 255);
+        }
+        
+        button:hover {
+            color: rgb(255, 255, 255);
+            background: rgb(188, 122, 250);
+        }
+        
+        #myRange {
+            width: 200px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+        <h1>
+            <center>About Me, Grayson</center>
+        </h1>
+
+        <h4>Interests</h4>
+        <section>
+            <p>Airplanes/Jets</p>
+            <p>Tanks</p>
+            <p>Painting Models</p>
+        </section>
+
+        <h4>Favorite Music Artists</h4>
+        <section>
+            <p>Primus</p>
+            <p>Soul Coughing</p>
+            <p>My Chemical Romance</p>
+            <p>Rage Against the Machine</p>
+            <p>Korn</p>
+            <p>Buckethead</p>
+        </section>
+
+        <h4>Pictures</h4>
+        <section>
+            <img src="About Me Pics/Porksodacover.jpg" height="100" width="100">
+            <img src="About Me Pics/Strike Eagle.jpeg" height="100" width="100">
+        </section>
+
+        <h4>Links </h4>
+        <section>
+            <table>
+                <tr>
+                    <td>
+                        <center>
+                            <a href="lists.html"><button>Lists</button></a>
+                            <br>
+                            <a href="music.html"><button>Music</button></a>
+                            <br>
+                            <a href="table.html"><button>Table</button></a>
+                            <br>
+                            <a href="Inline vs Block.html"><button>IL vs Block</button></a>
+                            <br>
+                            <a href="funk.html"><button>Ratings</button></a>
+                        </center>
+                    </td>
+                    <td>
+                        <center>
+                            <a href="links.html"><button>Links</button></a>
+                            <br>
+                            <a href="form.html"><button>Form</button></a>
+                            <br>
+                            <a href="AboutMe.html"><button>About Me</button></a>
+                            <br>
+                            <a href="CSS template.html"><button>Template</button></a>
+                            <br>
+                            <a href="Day 10.html"><button>Day 10</button></a>
+                        </center>
+                    </td>
+                </tr>
+
+            </table>
+        </section>
+
+        <br>
+
+        <section>
+            <div class="slider-container">
+                <input type="range" min="0" max="127" value="0" class="slider" id="Slider">
+                <div id="value">Value: 0</div>
+                <div id="binary-value">Binary Value: 0</div>
+            </div>
+        </section>
+
+        <script>
+            const Slider = document.getElementById("Slider");
+            const BinaryValue = document.getElementById("binary-value");
+            var Value = document.getElementById("value");
+
+            Slider.addEventListener("input", UpdateValues);
+
+            function UpdateValues() {
+                const DecimalString = parseInt(Slider.value);
+                const BinaryString = DecimalString.toString(2).padStart(8);
+
+                BinaryValue.textContent = `Binary Value: ${BinaryString}`;
+                value.textContent = `Value: ${DecimalString}`;
+            }
+        </script>
+    </center>
+</body>
+
+</html>

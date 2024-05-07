@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="Images/favicon.ico" />
+    <style>
+        body {
+            background-color: rgb(229, 183, 227);
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            background-color: rgb(229, 183, 227);
+            min-height: 2vh;
+        }
+        
+        nav {
+            flex-direction: row;
+            background-color: rgb(229, 174, 183);
+            display: flex;
+        }
+        
+        h4 {
+            margin: 15px;
+            padding-inline: 10px;
+            border: solid;
+        }
+        
+        h4:hover {
+            background-color: white;
+        }
+        
+        main {
+            background-color: pink;
+            flex: 1;
+            min-height: 84vh;
+        }
+        
+        footer {
+            background-color: rgb(229, 183, 227);
+            flex: 1;
+            min-height: 10vh;
+        }
+        
+        a {
+            color: hotpink;
+        }
+        
+        a.Genre {
+            color: black;
+            text-decoration: none;
+        }
+        
+        a.Genre:hover {
+            color: black;
+        }
+        
+        table,
+        tr,
+        td {
+            border: solid;
+        }
+        
+        input {
+            pointer-events: none;
+        }
+        
+        table {
+            padding: 10px;
+        }
+        
+        h6 {
+            margin: 0px;
+        }
+        
+        iframe {
+            height: 100px;
+            width: 100%;
+            padding-top: 12.5px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        
+        img {
+            padding-top: 3px;
+        }
+        
+        a.ArtistLinks {
+            color: rgb(211, 61, 134);
+            text-decoration: none;
+        }
+        
+        a.ArtistLinks:hover {
+            color: white
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <title>
+        Graysons Ratings | Rock
+    </title>
+</head>
+
+<body>
+    <header>
+        <h2>Graysons Music Ratings</h1>
+    </header>
+    <nav>
+
+        <h4><a href="funk.html" class="Genre">Funk </a></h4>
+        <h4 style="background-color:pink"><a href="Rock.html" class="Genre">Rock </a></h4>
+        <h4><a href="Metal.html" class="Genre">Metal </a></h4>
+        <h4><a href="AboutMe.html" class="Genre">About me </a></h4>
+        <h4><a href="Artist Profiles.html" class="Genre">Artist Profiles </a></h4>
+    </nav>
+
+    <main>
+        <center>
+            <h3>Rock</h3>
+
+            <table>
+                <thead>
+                    <th>Artist</th>
+                    <th>Name</th>
+                    <th>Rating</th>
+                    <th>Album</th>
+                    <th>Song</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <center> <a class="ArtistLinks" href="Artist Profiles.html#Pink Floyd">
+                                Pink Floyd
+                            </a></center>
+                        </td>
+                        <td>
+                            <center>Eclipse</center>
+                        </td>
+                        <td><input type="range" min="0" max="100" value="100" class="slider" id="Slider"></td>
+                        <td><img src="Images/Dark Side of the Moon.jpeg" width="100px"></td>
+                        <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1tDWVeCR9oWGX8d5J9rswk?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>Peirce the Veil</center>
+                        </td>
+                        <td>
+                            <center>The Sky Under the Sea</center>
+                        </td>
+                        <td><input type="range" min="0" max="100" value="79" class="slider" id="Slider"></td>
+                        <td><img src="Images/Selfish Machines.jpeg" width="100px"></td>
+                        <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1HKhwVYGRBZdTtNALA3XXM?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center> <a class="ArtistLinks" href="Artist Profiles.html#My Chemical Romance">
+                                My Chemical Romance
+                            </a></center>
+                        </td>
+                        <td>
+                            <center>Vampire Money</center>
+                        </td>
+                        <td><input type="range" min="0" max="100" value="82" class="slider" id="Slider"></td>
+                        <td><img src="Images/Danger Days.jpeg" width="100px"></td>
+                        <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4kXHIm097G3CemN3PzcpgL?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>
+                                <a class="ArtistLinks" href="Artist Profiles.html#Bauhaus">
+                                    Bauhaus
+                                </a>
+                            </center>
+                        </td>
+                        <td>
+                            <center>Bela Lugosi's Dead</center>
+                        </td>
+                        <td><input type="range" min="0 " max="100 " value="89 " class="slider " id="Slider"></td>
+                        <td><img src="Images/Bauhaus.jpeg " width="100px "></td>
+                        <td><iframe style="border-radius:12px " src="https://open.spotify.com/embed/track/1wyVyr8OhYsC9l0WgPPbh8?utm_source=generator&theme=0 " width="100% " height="152 " frameBorder="0 " allowfullscreen=" " allow="autoplay; clipboard-write;
+                                encrypted-media; fullscreen; picture-in-picture " loading="lazy "></iframe></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>System of a Down</center>
+                        </td>
+                        <td>
+                            <center>Darts</center>
+                        </td>
+                        <td><input type="range" min="0 " max="100 " value="81 " class="slider " id="Slider "></td>
+                        <td><img src="Images/System of a Down.png " width="100px "></td>
+                        <td><iframe style="border-radius:12px " src="https://open.spotify.com/embed/track/0GIvGfgr68OGkcCNFBAdrX?utm_source=generator&theme=0 " width="100% " height="152 " frameBorder="0 " allowfullscreen=" " allow="autoplay; clipboard-write;
+                                encrypted-media; fullscreen; picture-in-picture " loading="lazy "></iframe></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center> <a class="ArtistLinks" href="Artist Profiles.html#Buckethead">
+                                Buckethead
+                            </a></center>
+                        </td>
+                        <td>
+                            <center>Kar</center>
+                        </td>
+                        <td><input type="range" min="0 " max="100 " value="97 " class="slider " id="Slider "></td>
+                        <td><img src="Images/Boris Karloff.jpeg " width="100px "></td>
+                        <td><iframe style="border-radius:12px " src="https://open.spotify.com/embed/track/0lGZVZGGi3FVcfAArXMdKY?utm_source=generator&theme=0 " width="100% " height="152 " frameBorder="0 " allowfullscreen=" " allow="autoplay; clipboard-write;
+                                encrypted-media; fullscreen; picture-in-picture " loading="lazy "></iframe></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>TPOTUSOA</center>
+                        </td>
+                        <td>
+                            <center>Some Postman</center>
+                        </td>
+                        <td><input type="range" min="0 " max="100 " value="73 " class="slider " id="Slider "></td>
+                        <td><img src="Images/POTUS.jpeg " width="100px "></td>
+                        <td><iframe style="border-radius:12px " src="https://open.spotify.com/embed/track/7d4FiXLzC2flUVK875fln9?utm_source=generator&theme=0 " width="100% " height="152 " frameBorder="0 " allowfullscreen=" " allow="autoplay; clipboard-write;
+                                encrypted-media; fullscreen; picture-in-picture " loading="lazy "></iframe></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>Weezer</center>
+                        </td>
+                        <td>
+                            <center>My Name is Jonas</center>
+                        </td>
+                        <td><input type="range" min="0 " max="100 " value="78 " class="slider " id="Slider "></td>
+                        <td><img src="Images/Blue.jpg " width="100px "></td>
+                        <td><iframe style="border-radius:12px " src="https://open.spotify.com/embed/track/4nzyOwogJuWn1s6QuGFZ6w?utm_source=generator&theme=0 " width="100% " height="152 " frameBorder="0 " allowfullscreen=" " allow="autoplay; clipboard-write;
+                                encrypted-media; fullscreen; picture-in-picture " loading="lazy "></iframe></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center> <a class="ArtistLinks" href="Artist Profiles.html#Ozzy Osbourne">
+                                Ozzy Osbourne
+                            </a></center>
+                        </td>
+                        <td>
+                            <center>Diary of a Madman</center>
+                        </td>
+                        <td><input type="range" min="0 " max="100 " value="86 " class="slider " id="Slider "></td>
+                        <td><img src="Images/Diary of a Madman.jpg " width="100px "></td>
+                        <td><iframe style="border-radius:12px " src="https://open.spotify.com/embed/track/6joOV9D7y7TzWQprwrInUh?utm_source=generator&theme=0 " width="100% " height="152 " frameBorder="0 " allowfullscreen=" " allow="autoplay; clipboard-write;
+                                encrypted-media; fullscreen; picture-in-picture " loading="lazy "></iframe></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center> <a class="ArtistLinks" href="Artist Profiles.html#Buckethead">
+                                Buckethead
+                            </a></center>
+                        </td>
+                        <td>
+                            <center>Night of the Slunk</center>
+                        </td>
+                        <td><input type="range" min="0 " max="100 " value="96 " class="slider " id="Slider "></td>
+                        <td><img src="Images/Monsters and Robots.jpeg " width="100px " v></td>
+                        <td><iframe style="border-radius:12px " src="https://open.spotify.com/embed/track/5TzPzFtkhJvDPUmSlfqm3s?utm_source=generator&theme=0 " width="100% " height="152 " frameBorder="0 " allowfullscreen=" " allow="autoplay; clipboard-write;
+                                encrypted-media; fullscreen; picture-in-picture " loading="lazy "></iframe></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </center>
+    </main>
+
+    <footer>
+        <center>
+            <h5>Find all Music at <a href="https:/spotify.com " id="Footer Link ">Spotify</a></h5>
+            <h6>Made by Grayson Renner</h6>
+            <h6>Shakopee High School</h6>
+            <h6>100 17th Ave W, Shakopee, MN 55379</h6>
+            <h6>Last updated May 3rd 2024</h6>
+        </center>
+    </footer>
+
+</body>
+
+</html>
